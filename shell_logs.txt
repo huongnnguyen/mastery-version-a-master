@@ -1,0 +1,500 @@
+   59  make clear
+   60  make debug
+   61  make test
+   62  make clear
+   63  make debug
+   64  make clear
+   65  make debug
+   66  make test
+   67  make clear
+   68  make debug
+   69  make clear
+   70  make debug
+   71  make test
+   72  make clear
+   73  make debug
+   74  make test
+   75  make clear
+   76  make test
+   77  make clear
+   78  make test
+   79  make clewar
+   80  make clear
+   81  make test
+   82  make clear
+   83  make debug
+   84  make test
+   85  make clewar
+   86  make debug
+   87  make test
+   88  make test
+   89  make clera
+   90  make debug
+   91  make test
+   92  make clear
+   93  make debug
+   94  make test
+   95  gdb
+   96  -/bin/ci
+   97  ./bin/ci
+   98  make clear
+   99  make debug
+  100  make test
+  101  make clear
+  102  make debug 
+  103  make test
+  104  make test
+  105  make clear
+  106  make debug
+  107  make test
+  108  make clear
+  109  make debug
+  110  make test
+  111  gdb bin/ci
+  112  make test
+  113  gdb
+  114  gdb bin/ci
+  115  make clera
+  116  make clear
+  117  make debug
+  118  make test
+  119  gdb bin/ci
+  120  make test
+  121  gdb bin/ci
+  122  make clear
+  123  make debug
+  124  gdb bin/ci
+  125  gdb bin/ci
+  126  ./bin/ci
+  127  make clear
+  128  make debug
+  129  make test
+  130  make test
+  131  make test
+  132  make clear
+  133  make debug
+  134  make test
+  135  gdb bin/ci
+  136  make clear
+  137  make debug
+  138  make test
+  139  make clear
+  140  make test
+  141  make clear
+  142  make debug
+  143  make test
+  144  make clear
+  145  make debug
+  146  make test_week4
+  147  make clear
+  148  make debug
+  149  gdb bin/ci
+  150  hexdump -C testfile | sed -n '1,3p'
+  151  xxd testfile | head
+  152  sed -n '1,5p' testfile
+  153  make clear
+  154  make clean
+  155  make clean
+  156  make clean
+  157  make debug
+  158  gdb ./bin/ci
+  159  make clean
+  160  make debug
+  161  gdb ./bin/ci
+  162  make clean
+  163  make debug
+  164  gdb ./bin/ci
+  165  make clean
+  166  make test
+  167  make clean
+  168  make debug
+  169  gdb ./bin/ci
+  170  gdb ./bin/ci
+  171  gdb ./bin/ci
+  172  make clean
+  173  make debug
+  174  gdb ./bin/ci
+  175  make clean
+  176  make clean
+  177  diff test_output/ci/week4/b.gt_err.s.out test_output/reference/week4/b.gt_err.s.out
+  178  diff test_output/ci/week4/b.gt_err.s.out test_output/reference/week4/b.gt_err.s.out
+  179  ls test_output/ci/week4/
+  180  ls test_output/reference/week4/
+  181  diff test_output/ci/week4/b.gt_err.s.out test_output/reference/week4/b.gt_err.s.out
+  182  ls test_output/ci/week4/; ls test_output/reference/week4/
+  183  diff test_output/ci/week4/b.gt_err.err test_output/reference/week4/b.gt_err.err
+  184  cat test_output/ci/week4/b.gt_err.err
+  185  cat test_output/reference/week4/b.gt_err.err
+  186  make clean
+  187  make debug
+  188  make test
+  189  diff <(./bin/ci -i testcases/week4/b.gt_err.s) <(./ci_reference -i testcases/week4/b.gt_err.s)
+  190  make clean
+  191  make debug
+  192  make test
+  193  make clean
+  194  make debug
+  195  make clean
+  196  make debug
+  197  make test
+  198  make clean
+  199  make debu
+  200  make test
+  201  gdb ./bin/ci
+  202  diff <(./bin/ci -i testcases/week4/b.gt_err.s) <(./ci_reference -i testcases/week4/b.gt_err.s)
+  203  diff <(./bin/ci -i testcases/week4/b.eq_err.s) <(./ci_reference -i testcases/week4/b.eq_err.s)
+  204  make clean
+  205  make debug
+  206  make clean
+  207  make debug
+  208  make test
+  209  make clean
+  210  make debug
+  211  make test
+  212  make clean
+  213  make debug
+  214  make test
+  215  diff <(./bin/ci -i testcases/week4/b.eq_err.s) <(./ci_reference -i testcases/week4/b.eq_err.s)
+  216  make clean
+  217  make debug
+  218  make test
+  219  diff <(./bin/ci -i testcases/week4/b.eq_err.s) <(./ci_reference -i testcases/week4/b.eq_err.s)
+  220  diff <(./bin/ci -i testcases/week4/b.eq_err.s) <(./ci_reference -i testcases/week4/b.eq_err.s)
+  221  make clean
+  222  make debug
+  223  make test
+  224  diff <(./bin/ci -i testcases/week4/b.eq_err.s) <(./ci_reference -i testcases/week4/b.eq_err.s)
+  225  make clean
+  226  make all
+  227  ./bin/ci -i testcases/week4/b.eq_err.s
+  228  make clean
+  229  make all
+  230  ./bin/ci -i testcases/week4/b.eq_err.s
+  231  make test
+  232  make clean
+  233  make all
+  234  make debug
+  235  make test
+  236  diff <(./bin/ci -i testcases/week4/b.eq_err.s) <(./ci_reference -i testcases/week4/b.eq_err.s)
+  237  make clean
+  238  make debug
+  239  make test
+  240  make clean
+  241  make all
+  242  make test
+  243  ./bin/ci b.eq_err.s > my_output.txt
+  244  diff -u -w <(./bin/ci -i testcases/week4/b.eq_err.s) \           <(./ci_reference -i testcases/week4/b.eq_err.s)
+  245  diff -u -w <(./bin/ci -i testcases/week4/b.eq_err.s) \ <(./ci_reference -i testcases/week4/b.eq_err.s)
+  246  diff -u -w <(./bin/ci -i testcases/week4/b.eq_err.s)            <(./ci_reference -i testcases/week4/b.eq_err.s)
+  247  diff -u -w <(./bin/ci -i testcases/week4/b.eq_err.s)            <(./ci_reference -i testcases/week4/b.eq_err.s)
+  248  # after edit + rebuild
+  249  diff -u -w <(./bin/ci -i testcases/week4/b.eq_err.s) <(./ci_reference -i testcases/week4/b.eq_err.s)
+  250  gdb ./bin/ci
+  251  make clean
+  252  make a;;
+  253  make all
+  254  make test
+  255   printf("Label not found: %s\n", target_labe
+  256  make clean
+  257  make debug
+  258  make test
+  259  make clean
+  260  make test
+  261  make clean
+  262  make test
+  263  make clean
+  264  make all
+  265  make test
+  266  diff <(./bin/ci -i testcases/week4/b.cond.s) <(./ci_reference -i testcases/week4/b.cond.s)
+  267  diff -u -w <(./bin/ci -i testcases/week4/b.cond.s) \ <(./ci_reference -i testcases/week4/b.cond.s)
+  268  diff -u -w <(./bin/ci -i testcases/week4/b.cond.s) <(./ci_reference -i testcases/week4/b.cond.s)
+  269  make clean
+  270  make all
+  271  diff -u -w <(./bin/ci -i testcases/week4/b.cond.s) <(./ci_reference -i testcases/week4/b.cond.s)
+  272  diff -u -w <(./bin/ci -i testcases/week4/b.cond.s) <(./ci_reference -i testcases/week4/b.cond.s)
+  273  make test
+  274  make test
+  275  make clean
+  276  make test
+  277  make clean
+  278  make clean
+  279  make debug
+  280  make test
+  281  make clean
+  282  make all
+  283  make test
+  284  diff <(./bin/ci -i testcases/week4/call_err2.s) <(./ci_reference -i testcases/week4/call_err2.s)
+  285  diff <(./bin/ci -i testcases/week4/call_err2.s) <(./ci_reference -i testcases/week4/call_err2.s)
+  286  make clean
+  287  make debug
+  288  make test
+  289  valgrind --leak-check=full ./bin/ci -i testcases/week4/your_test.s
+  290  valgrind --leak-check=full ./bin/ci -i testcases/week4/call_err2.s
+  291  make clean
+  292  make test
+  293  make test
+  294  make clean
+  295  make debug
+  296  make test
+  297  make heap_runner
+  298  ./heap_runner
+  299  make clear
+  300  make all
+  301  make heap_runner
+  302  ./heap_runner
+  303  make all
+  304  make debug
+  305  python3 driver.py -w1
+  306  make clear
+  307  make clean
+  308  make debug
+  309  make clean
+  310  make all
+  311  make debug
+  312  ./runner -v traces/week1/short1-bal.rep
+  313  * {binary,binary2}-bal.rep
+  314  The allocation pattern is to alternatively allocate a small-sized
+  315  chunk of memory and a large-sized chunk. The small-sized chunks
+  316  (either 16 or 64 ) are deliberately set to be power of 2 while the
+  317  large-size chunks (either 112 or 448) are not a power of 2. Defeats
+  318  buddy algorithms. However, a simple-minded algorithm might prevail in
+  319  this scenario because a first-fit scheme will be good enough.
+  320  * coalescing-bal.rep
+  321  Repeatedly allocate two equal-sized chunks (4095 in size) and release
+  322  them, and then immediately allocate and free a chunk twice as big
+  323  (8190). This tests if the students' algorithm ever really releases
+  324  memory and does coalescing. The size is chosen to give advantage to
+  325  tree-based or segrated fits algorithms where there is no header or
+  326  footer overhead.
+  327  * {random,random2}-bal.rep
+  328  Random allocate and free requesets that simply test the correctness
+  329  and robustness of the algorithm.
+  330  * {realloc,realloc2}-bal.rep
+  331  Reallocate previously allocated blocks interleaved by other allocation
+  332  request. The purpose is to test whether a certain amount of internal
+  333  fragments are allocated or not. Naive realloc implementations that
+  334  always realloc a brand new block will suffer.
+  335  * hard testcase are designed to test you code under realistic programs. 
+  336  These testcases are the tracefiles from the hardest testcases you saw in CI Lab.
+  337  ./runner -v traces/week1/short1.rep
+  338  ./runner -v traces/week1/short1-bal.rep
+  339  python3 driver.py -w1
+  340  Tabulate import successful. ✅
+  341  rm -f *.so runner heap_runner bump_test gprof_performance performance *.gcda gmon.out         support.o err_handler.o umalloc.o check_heap.o gprof_umalloc.o heap_runner.o bump_test.o csbrk.o
+  342  gcc -Wall -O2  -Werror -g3 -DTRACK_CSBRK -o csbrk.o -c csbrk.c
+  343  gcc -Wall -O2  -Werror -g3   -c -o umalloc.o umalloc.c
+  344  gcc -Wall -O2  -Werror -g3 -c check_heap.c
+  345  gcc -Wall -O2  -Werror -g3   -c -o err_handler.o err_handler.c
+  346  gcc -Wall -O2  -Werror -g3   -c -o support.o support.c
+  347  gcc -Wall -O2  -Werror -g3 -o runner runner.c  umalloc.h csbrk.o umalloc.o check_heap.o err_handler.o support.o
+  348  gcc -Wall -O2  -Werror -g3 -c heap_runner.c
+  349  gcc -Wall -O2  -Werror -g3 -o heap_runner heap_runner.o check_heap.o csbrk.o umalloc.o err_handler.o support.o
+  350  gcc -Wall -O2  -Werror -g3 -o performance performance.c umalloc.h csbrk.o umalloc.o err_handler.o support.o
+  351  gcc -Wall -O2  -Werror -g3 -c bump_test.c
+  352  gcc -Wall -O2  -Werror -g3 -o bump_test bump_test.o check_heap.o csbrk.o umalloc.o err_handler.o support.o
+  353  short1-bal.rep
+  354  short1.rep
+  355  short2-bal.rep
+  356  short2.rep
+  357  Trace                          Passed      Utilization    Performance (Operations per millisecond)
+  358  -----------------------------  --------  -------------  ------------------------------------------
+  359  ./traces/week1/short1-bal.rep  No                   -1                                          -1
+  360  ./traces/week1/short1.rep      No                   -1                                          -1
+  361  ./traces/week1/short2-bal.rep  No                   -1                                          -1
+  362  ./traces/week1/short2.rep      No                   -1                                          -1
+  363  Average                        0.00                  0                                           0
+  364  🚨 Did not pass bump allocation test and/or implicit free list test 🚨
+  365  Your heap_runner score is: 1.0
+  366  Note that your utilization & throughput do NOT affect your checkpoint grade for week 1.
+  367  Total Score 1.0
+  368  make clean
+  369  ./runner -f traces/week1/short1.rep
+  370  ./ runner -f /u/huongn/Downloads/mm-lab-huongnnguyen/traces/week1/short1.rep
+  371  q
+  372  ./runner -f traces/week1/short1.rep
+  373  ./runner -f traces/week1/short1.rep
+  374  ./runner -f traces/week1/short1.rep
+  375  ./runner -f traces/week1/short1.rep
+  376  ./runner -f traces/week1/short1.rep
+  377  ./runner -f traces/week1/short1.rep
+  378  ./runner -f traces/week1/short1.rep
+  379  ./runner -f traces/week1/short1.rep
+  380  ./runner -v traces/week1/short1.rep
+  381  make clean
+  382  make all
+  383  make debug
+  384  ./runner -f traces/week1/short1.rep
+  385  ./runner -v -c -f traces/week1/short1.rep
+  386  ./runner -v -c -f traces/week1/short1.rep
+  387  make clean
+  388  make debug
+  389  make all
+  390  ./runner -v -c -f traces/week1/short1.rep
+  391  ./runner -v -c traces/week1/short1.rep
+  392  make clean
+  393  make clean
+  394  make debug
+  395  make all
+  396  ./runner traces/week1/short1.rep
+  397  make clean
+  398  ./heap_runner
+  399  make heap_runner
+  400  ./heap_runner
+  401  make clean
+  402  ./runner -v -c traces/week1/short1.rep
+  403  ./runner -v -c traces/week1/short1.rep
+  404  ./runner -v traces/week1/short1.rep
+  405  make clean
+  406  make all
+  407  make debug
+  408  ./runner -v traces/week1/short1.rep
+  409  make 
+  410  ./runner -v traces/week1/short1.rep
+  411  make
+  412  ./runner -v traces/week1/short1.rep
+  413  make
+  414  ./ runner -v traces/week1/short1.rep
+  415  make
+  416  ./runner -v traces/week1/short1.rep
+  417  ./runner -r -v traces/week1/short1.rep
+  418  make
+  419  ./runner -r -v traces/week1/short1-bal.rep
+  420  ./runner -r -v traces/week1/short2.rep
+  421  ./runner -r -v traces/week1/short2-bal.rep
+  422  python3 driver.py -w1
+  423  make
+  424  make clean
+  425  make debug
+  426  python3 driver.py -w1
+  427  make
+  428  python3 driver.py -w1
+  429  python3 driver.py -w1
+  430  python3 driver.py -w2
+  431  make
+  432  make clean
+  433  make 
+  434  ./runner -v traces/week1/amptjp-bal.rep
+  435  ./runner -v traces/week2/basic/amptjp-bal.rep
+  436  python3 driver.py -w1
+  437  python3 driver.py -w2
+  438  make clean
+  439  python3 driver.py -w2
+  440  make clean
+  441  make clean
+  442  make
+  443  python3 driver.py -w2
+  444  make clean
+  445  make 
+  446  make
+  447  make
+  448  make clean
+  449  make
+  450  make
+  451  make clean
+  452  make
+  453  python3 driver.py -w2
+  454  make clean
+  455  make
+  456  python3 driver.py -w2
+  457  make clean
+  458  make
+  459  python3 driver.py -w2
+  460  make clean
+  461  make
+  462  python3 driver.py -w2
+  463  make clean
+  464  make
+  465  if (ptr == NULL) {
+  466          return;
+  467      }
+  468      
+  469      mem_block_header_t *block = get_header(ptr);
+  470      deallocate(block);
+  471      
+  472      // Single-pass coalescing: only call coalesce() once
+  473      block = coalesce(block);
+  474      
+  475      // Get final size after coalescing
+  476      size_t block_size = get_size(block);
+  477      int bin_idx = get_bin_index(block_size);
+  478      
+  479      // Size-ordered insertion - optimized
+  480      if (free_heads[bin_idx] == NULL || block_size <= get_size(free_heads[bin_idx])) {
+  481          block->next = free_heads[bin_idx];
+  482          free_heads[bin_idx] = block;
+  483      } else {
+  484          mem_block_header_t *curr = free_heads[bin_idx];
+  485          while (curr->next != NULL && get_size(curr->next) < block_size) {
+  486              curr = curr->next;
+  487          }
+  488          block->next = curr->next;
+  489          curr->next = block;
+  490      }make clean
+  491  make clean
+  492  make
+  493  python3 driver.py -w2
+  494  make clean
+  495  make
+  496  python3 driver.py -w2
+  497  make clean
+  498  make
+  499  python3 driver.py -w2
+  500  man touch
+  501  make
+  502  ./mini_ci testcases/basic_add.s
+  503  make check
+  504  ./mini_ci testcases
+  505  ./mini_ci testcases/basic_div.s
+  506  ./mini_ci testcases/basic_mul.s
+  507  ./mini_ci testcases/basic_sub.s
+  508  ./mini_ci testcases/err_ops.s
+  509  make check
+  510  make clean
+  511  make debug
+  512  gdb ./mini_ci
+  513  make clean
+  514  make debug
+  515  gdb mini_ci
+  516  make clean
+  517  make
+  518  ./mini_ci testcases/err_ops.s
+  519  ./mini_ci_reference testcases/err_ops.s
+  520  ./mini_ci_reference testcases/err_ops.s
+  521  ./mini_ci_reference testcases/err_ops.s
+  522  ls -l mini_ci_reference
+  523  chmod +x mini_ci_reference
+  524  ls -l mini_ci_reference
+  525  ./mini_ci_reference testcases/err_ops.s
+  526  make clean
+  527  make
+  528  ./mini_ci testcases/err_ops.s
+  529  make check
+  530  make clean
+  531  make 
+  532  ./mini_ci testcases/err_ops2.s
+  533  make clean
+  534  make debug
+  535  gdb mini_ci
+  536  make clean
+  537  make
+  538  ./mini_ci testcases/err_ops2.s
+  539  ./mini_ci_reference testcases/err_ops2.s
+  540  make check
+  541  make clean
+  542  make 
+  543  ./mini_ci testcases
+  544  ./mini_ci testcases
+  545  make check
+  546  make check
+  547  make clean
+  548  make
+  549  ./mini_ci testcases/multi_op_err.s
+  550  make check
+  551  make clean
+  552  make debug
+  553  gdb mini_ci
+  554  make clean
+  555  make
+  556  make check
+  557  history
+  558  history > shell_logs.txt

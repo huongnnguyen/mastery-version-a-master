@@ -12,10 +12,26 @@ int calculate_result(struct Reader *reader) {
             // this is an operation:
             struct Token *op = head;
             struct Token *val_a = head->next;
+            if(!val_a){
+                free(val_a);
+                free(op);
+                reader->had_error = true;
+                return -1;
+            }
             struct Token *val_b = head->next->next;
+            if(!val_b){
+                free(val_a);
+                free(val_b);
+                free(op);
+                reader->had_error = true;
+                return -1;
+            }
 
             struct Token *new_token = malloc(sizeof(struct Token));
             if (!new_token) {
+                free(val_a);
+                free(val_b);
+                free(op);
                 reader->had_error = true;
                 return -1;
             }
@@ -27,6 +43,9 @@ int calculate_result(struct Reader *reader) {
                     if (val_a->val != 0)
                         new_token->val = val_b->val / val_a->val;
                     else {
+                        free(val_a);
+                        free(val_b);
+                        free(op);
                         reader->had_error = true;
                         return -1;
                     }
